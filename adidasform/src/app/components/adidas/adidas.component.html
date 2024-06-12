@@ -1,0 +1,31 @@
+<h1>Adidas Products</h1>
+
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitFormShoe()">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Brand Name</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="model" placeholder="Puma" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Color</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="color" placeholder="Red" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="7" nzRequired>Price</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="price" placeholder="100.00" />
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-control
+      [nzXs]="{ span: 24, offset: 0 }"
+      [nzSm]="{ span: 16, offset: 8 }"
+    >
+      <button nz-button nzType="primary" class="button">Submit</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
